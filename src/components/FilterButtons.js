@@ -17,9 +17,15 @@ export default (props) => {
 
   return (
     <div className="filter-buttons container">
-      <a onClick={setAll}>All</a>
-      <a onClick={setActive}>Active</a>
-      <a onClick={setCompleted}>Done</a>
+      <a
+        className={props.view === 'all' ? 'active' : undefined}
+        onClick={setAll}>All</a>
+      <a
+        className={props.view === 'active' ? 'active' : undefined}
+        onClick={setActive}>Active</a>
+      <a
+        className={props.view === 'completed' ? 'active' : undefined}
+        onClick={setCompleted}>Done</a>
     </div>
   )
 }

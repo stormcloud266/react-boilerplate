@@ -60,11 +60,12 @@ class ToDoApp extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <Header />
         {/* <button onClick={this.lg}>click</button> */}
         <FilterButtons
           handleSetView={this.handleSetView}
+          view={this.state.view}
         />
         <Search handleSearch={this.handleSearch} />
         <OptionContainer

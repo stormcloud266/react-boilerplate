@@ -9,7 +9,7 @@ export default class AddOption extends React.Component {
   addOption = (e) => {
     e.preventDefault();
     const option = {
-      name: e.target.optionInput.value.trim(),
+      name: e.target.optionInput.value.trim().toLowerCase(),
       active: true
     }
     const error = this.props.handleAddOption(option);
@@ -49,7 +49,7 @@ export default class AddOption extends React.Component {
             >Remove All Completed</button>
         </form>
 
-        {!!this.state.error && <p>{this.state.error}</p>}
+        {!!this.state.error && <p className="error">{this.state.error}</p>}
       </div>
     )
   }

@@ -13,15 +13,24 @@ export default class Option extends React.Component {
     return (
       <div className="option container">
         <div
-          onClick={this.changeActive}
           className="option__check"
-          >{this.props.active ? <i className="far fa-square"></i> : <i className="far fa-check-square"></i>}
+          >
+            {this.props.active ?
+              <i onClick={this.changeActive} className="far fa-square"></i> :
+              <i onClick={this.changeActive} className="far fa-check-square"></i>}
         </div>
-        <p className="option__text">{this.props.name}</p>
-        <h5
-          onClick={this.removeOption}
-          className="option__remove"
-          >remove</h5>
+
+        <div>
+          <p className={`option__text ${this.props.active !== true ? 'complete' : undefined}`}>
+            {this.props.name}</p>
+        </div>
+
+        <div>
+          <h5
+            onClick={this.removeOption}
+            className="option__remove"
+            >remove</h5>
+        </div>
       </div>
     )
   }

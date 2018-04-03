@@ -1,5 +1,5 @@
 .add-option {
-  // margin-top: $xl-size;
+  margin: $xl-size auto 20rem;
   bottom: 30%;
 
   &__form {
@@ -33,5 +33,9 @@
   button:hover {
     color: lighten($lightGreen, 10%);
     border-bottom: 2px solid $lightGreen;
+  }
+  .error {
+    color: $lightGreen;
+    font-style: italic;
   }
 }

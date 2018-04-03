@@ -7,8 +7,12 @@
   a {
     margin: 0 $m-size;
     color: $lightGreen;
+    transition: all .3s;
   }
   a:hover {
     cursor: pointer;
   }
+}
+.active {
+  color: $lightGray !important;
 }

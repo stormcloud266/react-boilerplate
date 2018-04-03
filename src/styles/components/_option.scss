@@ -1,43 +1,58 @@
+
+
 .option {
-  background: $mediumGreen;
   display: flex;
+  flex-direction: row;
   margin: $s-size auto;
-  align-items: center;
+  background: $mediumGreen;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+  }
+
+  & > *:nth-child(1) {
+    flex: 0;
+  }
+  & > *:nth-child(2) {
+    flex: 3;
+  }
+  & > *:nth-child(3) {
+    flex: 0;
+  }
 
   &__check {
-    flex: 0;
+    padding: $m-size;
     margin: 0;
-    padding: $l-size;
     font-family: fontawesome !important;
     font-size: 2.2rem;
     color: $lightGreen;
     background: $darkGreen;
-    position: relative;
-    i {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-52%);
-      cursor: pointer;
-      
-    }
+  }
+  i {
+    cursor: pointer;
+  }
+  &__text{
+    padding: $m-size $s-size;
+    margin: 0;
+    font-size: 2rem;
+    transition: all .3s;
 
   }
-  &__text {
-    margin: 0 0 0 $s-size;
-    flex: 3;
-    font-size: 2rem;
-  }
   &__remove {
+    padding: $s-size;
+    margin: 0;
     cursor: pointer;
     color: $lightGreen;
-    margin: 0;
-    flex: 0;
     padding: 0 $m-size;
-    height: 100%;
     transition: all .3s;
   }
   &__remove:hover {
     color: lighten($lightGreen, 10%);
   }
+}
+.complete {
+  color: $lightGreen !important;
+  text-decoration: line-through;
 }
