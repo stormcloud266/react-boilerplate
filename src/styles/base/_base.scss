@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  font-weight: 100;
+  background: $mainGreen;
+  color: $lightGray;
+  position: relative;
+}
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}

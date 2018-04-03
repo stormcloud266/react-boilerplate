@@ -1,5 +1,5 @@
 {
-  "name": "minimal-react-boilerplate",
+  "name": "todo2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,5 +26,14 @@
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.8.3",
+    "normalize.css": "^8.0.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3"
   }
 }

@@ -1,0 +1,12 @@
+.header {
+  background: $darkGreen;
+  margin-top: $xl-size;
+  
+  &__title {
+    font-weight: 300;
+    padding: $m-size;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+}

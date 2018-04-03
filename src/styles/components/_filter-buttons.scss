@@ -1,0 +1,14 @@
+.filter-buttons {
+  text-align: center;
+  background: $mediumGreen;
+  padding: $m-size;
+  box-sizing: border-box;
+
+  a {
+    margin: 0 $m-size;
+    color: $lightGreen;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+}

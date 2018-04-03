@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ToDoApp from './components/ToDoApp';
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 
-const title = (
-  <div>
-    <h1>My Minimal React Webpack Babel Setup</h1>
-  </div>
-);
 
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
-);
+ReactDOM.render( <ToDoApp />, document.getElementById('app') );
 module.hot.accept();

@@ -1,0 +1,37 @@
+.add-option {
+  // margin-top: $xl-size;
+  bottom: 30%;
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    background: $darkGreen;
+    outline: none;
+    border: none;
+    color: $lightGray;
+    padding: $m-size $m-size;
+    margin: 0 auto;
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  button {
+    flex-basis: 50%;
+    background: $mediumGreen;
+    border: none;
+    outline: none;
+    padding: $m-size;
+    color: $lightGreen;
+    border-bottom: 2px solid $mediumGreen;
+    transition: all .3s;
+  }
+  button:hover {
+    color: lighten($lightGreen, 10%);
+    border-bottom: 2px solid $lightGreen;
+  }
+}

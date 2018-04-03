@@ -1,0 +1,43 @@
+.option {
+  background: $mediumGreen;
+  display: flex;
+  margin: $s-size auto;
+  align-items: center;
+
+  &__check {
+    flex: 0;
+    margin: 0;
+    padding: $l-size;
+    font-family: fontawesome !important;
+    font-size: 2.2rem;
+    color: $lightGreen;
+    background: $darkGreen;
+    position: relative;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-52%);
+      cursor: pointer;
+      
+    }
+
+  }
+  &__text {
+    margin: 0 0 0 $s-size;
+    flex: 3;
+    font-size: 2rem;
+  }
+  &__remove {
+    cursor: pointer;
+    color: $lightGreen;
+    margin: 0;
+    flex: 0;
+    padding: 0 $m-size;
+    height: 100%;
+    transition: all .3s;
+  }
+  &__remove:hover {
+    color: lighten($lightGreen, 10%);
+  }
+}

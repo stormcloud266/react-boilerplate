@@ -1,0 +1,16 @@
+.search {
+  background: $mediumGreen;
+  padding: 0 0 $m-size 0;
+  box-sizing: border-box;
+  text-align: center;
+
+  &__input {
+    background: $darkGreen;
+    outline: none;
+    border: none;
+    padding: $s-size $m-size;
+    color: $lightGray;
+    font-size: $m-size;
+    font-weight:100;
+  }
+}
