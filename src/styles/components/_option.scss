@@ -38,7 +38,7 @@
     margin: 0;
     font-size: 2rem;
     transition: all .3s;
-
+    word-break: break-all;
   }
   &__remove {
     padding: $s-size;

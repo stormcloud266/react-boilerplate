@@ -62,7 +62,6 @@ class ToDoApp extends React.Component {
     return (
       <div className="wrapper">
         <Header />
-        {/* <button onClick={this.lg}>click</button> */}
         <FilterButtons
           handleSetView={this.handleSetView}
           view={this.state.view}
